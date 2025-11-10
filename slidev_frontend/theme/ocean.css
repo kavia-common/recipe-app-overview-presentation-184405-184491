@@ -1,0 +1,85 @@
+:root {
+  /* Ocean Professional palette */
+  --ocean-primary: #2563EB;   /* blue */
+  --ocean-secondary: #F59E0B; /* amber */
+  --ocean-error: #EF4444;
+
+  --ocean-bg: #f9fafb;   /* background */
+  --ocean-surface: #ffffff; /* cards/surfaces */
+  --ocean-text: #111827; /* text */
+
+  /* Map to generic tokens used in theme/custom.css-based components */
+  --theme-bg-canvas: var(--ocean-bg);
+  --theme-bg-elevated: var(--ocean-surface);
+  --theme-bg-elev-1: var(--ocean-surface);
+  --theme-bg-elev-2: #f3f4f6;
+  --theme-bg-elev-3: #eef2ff;
+
+  --theme-text-primary: var(--ocean-text);
+  --theme-text-secondary: #374151;
+
+  --theme-primary-600: #1d4ed8;
+  --theme-primary-500: var(--ocean-primary);
+  --theme-primary-400: #3b82f6;
+  --theme-primary-300: #60a5fa;
+  --theme-primary-200: #93c5fd;
+  --theme-primary-50:  #eff6ff;
+
+  --theme-success: var(--ocean-secondary);
+  --theme-warning: var(--ocean-secondary);
+  --theme-danger:  var(--ocean-error);
+
+  --theme-btn-primary-fg: #ffffff;
+  --theme-btn-primary-bg: var(--ocean-primary);
+  --theme-btn-primary-hover: #1d4ed8;
+
+  --line-subtle: #e5e7eb;
+  --line: #e5e7eb;
+  --line-strong: #d1d5db;
+
+  --grad-primary: linear-gradient(135deg, rgba(37,99,235,0.95) 0%, rgba(59,130,246,0.95) 50%, rgba(147,197,253,0.95) 100%);
+}
+
+/* Light base surface and text */
+:root, html, body, .slidev-root, .slidev-page, .slidev-layout, .slidev-layout.current {
+  background: var(--ocean-bg) !important;
+  color: var(--ocean-text);
+}
+
+/* Card shadow lighten from dark variant */
+.card, .feature-card, .problem-card, .glass-frame, .stat-card, .time-card {
+  box-shadow: 0 8px 22px rgba(17, 24, 39, 0.08);
+}
+
+/* Subtle gradient feel for title and section containers */
+.title-slide {
+  background: linear-gradient(to bottom, rgba(37,99,235,0.10), rgba(243,244,246,0.40));
+  border-radius: 20px;
+}
+
+/* Link colors */
+a, .accent { color: #2563EB; }
+a:hover { color: #1d4ed8; }
+
+/* Ensure placeholders look light */
+.placeholder {
+  background: #f9fafb;
+  color: #4b5563;
+}
+
+/* Eyebrow chips in light mode with amber or blue support via inline styles */
+.eyebrow {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+}
+
+/* Secondary button neutral in light mode */
+.btn-secondary {
+  background: #ffffff;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+}
+.btn-secondary:hover {
+  background: #f9fafb;
+}

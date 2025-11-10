@@ -1,2 +1,4 @@
 /* style.css */
+/* Preserve existing custom tokens and utilities, then override with Ocean Professional light theme. */
 @import "./theme/custom.css";
+@import "./theme/ocean.css";
